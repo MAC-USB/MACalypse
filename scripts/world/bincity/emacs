@@ -1,23 +1,22 @@
 #!/bin/bash
-### Script de hablar con emacs###
+### Script de hablar con emacs ###
 ### Variables ###
-FILE1="emacs" 
-FILE2="nicolaS.cage"
-FILE3="JML"
+FILE1=emacs
+FILE2=nicolaS.cage
+FILE3=JML
 ### Diálogo ###
 clear
 echo -e "$ ${BLUE}$PLAYER${NC}: Parece que solo queda un archivo. Hey, que tal todo?" | pv -qL100
-echo -e "$ ${YELLOW}$FILE1${NC} : Hola, soy emacs y tu?"| pv -qL100
-echo -e "$ ${BLUE}$PLAYER${NC}: yo soy $PLAYER , el Héroe. " | pv -qL100
-echo -e "$ ${YELLOW}$FILE1${NC} Hola Héroe, un placer conocerte. Todo ha estado bastante tétrico por aca, lo del hacker nos ha tenido muy preocupados a todos. " | pv -qL100
+echo -e "$ ${YELLOW}${FILE1}${NC}: Hola, soy emacs y tu?" | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: yo soy $PLAYER, el Héroe." | pv -qL100
+echo -e "$ ${YELLOW}${FILE1}${NC} Hola Héroe, un placer conocerte. Todo ha estado bastante tétrico por aca, lo del hacker nos ha tenido muy preocupados a todos." | pv -qL100
 echo -e "$ ${BLUE}$PLAYER${NC}: Me imagino, he conseguido muchos archivos corruptos por aca" | pv -qL100
-echo -e "$ ${YELLOW}$FILE1${NC}:Así debe ser, he escuchado que JML, el secuaz del hacker esta por ahi" |  pv -qL100
+echo -e "$ ${YELLOW}${FILE1}${NC}:Así debe ser, he escuchado que JML, el secuaz del hacker esta por ahi" | pv -qL100
 echo -e "$ ${BLUE}$PLAYER${NC}: Ya nos lo encontramos, fue algo...sentimental." | pv -qL100
-echo -e "$ ${YELLOW}$FILE1${NC} : Rara forma de describir a JML..."| pv -qL100
-echo -e "$ ${BLUE}$PLAYER${NC}:Entonces, ¿tú qué eres?" | pv -qL100
-echo -e "$ ${YELLOW}$FILE1${NC}: Soy un editor de código :) " | pv -qL100
+echo -e "$ ${YELLOW}${FILE1}${NC}: Rara forma de describir a JML..." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Entonces, ¿tú qué eres?" | pv -qL100
+echo -e "$ ${YELLOW}${FILE1}${NC}: Soy un editor de código :)" | pv -qL100
 echo -e "$ ${BLUE}$PLAYER${NC}: Mmmm, ya veo. Qué dices tú nicolas.cage?" | pv -qL100
-echo -e "$ ${GREEN}$FILE2${NC} : El vikingo nicolas.cage cree que él dice la verdad, aunque no tengo información suficiente…
- " | pv -qL100
+echo -e "$ ${GREEN}${FILE2}${NC}: El vikingo nicolas.cage cree que él dice la verdad, aunque no tengo información suficiente." | pv -qL100
 ### Fin del dialogo ###
 press_enter

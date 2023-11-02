@@ -17,6 +17,7 @@ START=$SCRIPTS_DIR/start.sh
 ANIMATION=$SCRIPT_DIR/animation/animation.sh
 WORLD=$SCRIPTS_DIR/world.sh
 INTRO=$SCRIPTS_DIR/intro.sh
+FINALES=$SCRIPTS_DIR/finales.sh
 CREDITS=$SCRIPTS_DIR/credits.sh
 
 ### Exec ###
