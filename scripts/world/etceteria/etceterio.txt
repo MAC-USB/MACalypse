@@ -1,0 +1,20 @@
+#!/bin/bash
+### Script de hablar con etceterio.txt ###
+
+### Variables ###
+FILE1="grub.old"
+FILE2="etceterio.txt"
+
+### Dialogo ###
+clear
+echo -e "$ ${GREEN}$FILE1${NC}: Te tenemos rodeado, etceterio.txt, todo lo que digas puede y será usado en tu contra." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Wow wow, disculpa, eteceterio.txt. Estamos muy preocupados por la situación y hemos escuchado rumores que te involucran." | pv -qL100
+echo -e "$ ${YELLOW}$FILE2${NC}: Sabía que ganarle una partida de lobo en esta aldea no pasaría desapercibido." | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: Ajaaá, admitiste tu culp… espera, todo el revuelo es por una partida de lobo." | pv -qL100
+echo -e "$ ${YELLOW}$FILE2${NC}: Y sí, era una partida caótica, había cultistas también. En fin, creo que eso es lo de menos con todos los archivos olvidando sus configuraciones." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Entonces, ¿tu te preocupas por los demás archivos?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE2${NC}: Claro, siempre tengo que recordarles las configuraciones correctas, no queremos confusiones." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Interesante..." | pv -qL100
+
+### Fin del dialogo ###
+press_enter

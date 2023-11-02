@@ -1,0 +1,16 @@
+#!/bin/bash
+### Script de hablar con system32 ###
+
+### Variables ###
+FILE1="grub.old"
+
+### Dialogo ###
+clear
+echo -e "$ ${GREEN}$FILE1${NC}: Hey, mira a aquel, ese es System32, es el mejor de todos los archivos." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: ¿System32? ¿pero no estamos en linux?" | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: Ehhhhhh, si pero que importa, es el mejor." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Esta raro la verdad, ni siquiera voy a hablar con él" | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Bueno, con eso hemos recorrido toda ateceteria, ¿a quien quieres eliminar? Debes decidir rapido que nos falta bin_city." | pv -qL100
+
+### Fin del dialogo ###
+press_enter

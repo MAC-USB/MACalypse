@@ -1,5 +1,5 @@
 #!/bin/bash
-### Script de habblar con blacklist.txt ###
+### Script de hablar con blacklist.txt ###
 
 ### Variables ###
 FILE1="grub.old"

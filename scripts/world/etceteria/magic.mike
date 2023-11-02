@@ -1,0 +1,19 @@
+#!/bin/bash
+### Script de hablar con magic.mike ###
+
+### Variables ###
+FILE1="grub.old"
+FILE2="magic.mike"
+
+### Dialogo ###
+clear
+echo -e "$ ${BLUE}$PLAYER${NC}: Buenas..." | pv -qL100
+echo -e "$ ${YELLOW}$FILE2${NC}: Buenas las tenga y mejor las pase.. las tardes." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Gracias, gracias, quería preguntarte cómo has visto a esta aldea estos últimos días, ¿has escuchado el rumor?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE2${NC}: Sí, escuché que etceterio.txt se está durmiendo en el trabajo y confundiendo a los demás archivos de configuración." | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: ¿En serio? Nosotros nos referimos a los archivos corruptos que intentan destruirnos." | pv -qL100
+echo -e "$ ${YELLOW}$FILE2${NC}: No lo sabía, pero ahora todo tiene sentido, ese eteceterio.txt tiene que ser uno de ellos!! No merece ni seguir existiendo." | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: Tienes toda la razón, magic.mike, no dejaremos que los corruptos no venzan." | pv -qL100
+
+### Fin del dialogo ###
+press_enter

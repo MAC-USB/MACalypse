@@ -1,5 +1,5 @@
 #!/bin/bash
-### Script de habblar con initrd.img ###
+### Script de hablar con initrd.img ###
 
 ### Variables ###
 FILE1="grub.old"
