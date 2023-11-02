@@ -1,6 +1,9 @@
 #!/bin/bash
 ### Script de hablar con grub.old ###
 
+### Variables ###
+FILE="grub.old"
+
 ### Diálogo ###
 clear
 echo -e "$ ${GREEN}$PLAYER${NC}: Buenos dias, Sr..." | pv -qL100
