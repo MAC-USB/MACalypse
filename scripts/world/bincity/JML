@@ -1,0 +1,29 @@
+#!/bin/bash
+### Script de hablar con JML ###
+
+### Variables ###
+FILE1="grub.old"
+FILE2="nicolas.cage"
+FILE3="JML"
+
+### Dialogo ###
+clear
+echo -e "$ ${BLUE}$PLAYER${NC}: Grub, sabes quien es ese? huele muy mal, como si hace 3 años no lo actualizaran." | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: yo… no…" | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Hablaré con él. Hola, disculpa, ¿qué haces?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE3${NC}: ¿Qué quieres?" | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Solo estoy hablando con los archivos, nada mas." | pv -qL100
+echo -e "$ ${YELLOW}$FILE3${NC}: Pues no quiero hablar contigo." | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: Ya ${PLAYER}, dejemos a JML tranquilo." | pv -qL100
+echo -e "$ ${GREEN}$FILE2${NC}: El divinisimo nicolas.cage se pregunta, cómo sabes su nombre?" | pv -qL100
+echo -e "$ ${RED}$FILE3${NC}: Jajajajaj" | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: ¿Grub? ¿que está pasando?" | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: No me vuelvas a llamar grub, archivo de texto inservible." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: ¿Qué es esto?" | pv -qL100
+echo -e "$ ${RED}$FILE1${NC}: Trabajo para JML, si? y estamos cerca de acabar con todos ustedes
+" | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: No te quiero ver mas nunca, te vamos a destruir, vamos nicolas.cage
+" | pv -qL100
+
+### Fin del dialogo ###
+press_enter

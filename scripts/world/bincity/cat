@@ -1,0 +1,22 @@
+#!/bin/bash
+### Script de hablar con cat ###
+
+### Variables ###
+FILE1="grub.old"
+FILE2="nicolas.cage"
+FILE3="cat"
+FILE4="ls"
+
+### Dialogo ###
+clear
+echo -e "$ ${BLUE}$PLAYER${NC}: Hey, ¿que hacen ahí escondidos?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE4${NC}: El hacker está cerca y dicen que tiene un secuaz muy malvado, solo sabe destruir y corromper archivos." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Oh, no." | pv -qL100
+echo -e "$ ${PURPLE}$FILE3${NC}: Si, y lo peor es que dicen que tiene muchos archivos infiltrados en las aldeas haciendo cosas terribles." | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: Tranquilos, el hacker y su secuaz están por caer." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Eso es cierto, vamos a destruirlos. Pero antes, nicolas.cage, ¿ellos son malos?" | pv -qL100
+echo -e "$ ${GREEN}$FILE2${NC}: El millonario nicolas.cage afirma en negativo." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Entonces sigamos." | pv -qL100
+
+### Fin del dialogo ###
+press_enter

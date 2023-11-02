@@ -1,0 +1,21 @@
+#!/bin/bash
+### Script de hablar con la tesis ###
+
+### Variables ###
+FILE1="grub.old"
+FILE2="nicolas.cage"
+
+### Dialogo ###s
+clear
+echo -e "$ ${GREEN}$FILE1${NC}: Espera ese es..." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: ¿Quién es?" | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: es tesis_final_definitiva_no_borrar.docx" | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: ¿Y que pasa? ¿La conoces?" | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: No, pero he escuchado cosas de ella y no son muy buenas." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: ¿Cómo que cosas?" | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: Como que siempre anda cambiando de nombre y modificándose" | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: ¿Que opinas tu nicolas.cage?" | pv -qL100
+echo -e "$ ${GREEN}$FILE2${NC}: El maravilloso nicolas.cage opina que es cierto lo que dice grub.old, no parece confiable. Es mejor seguir avanzando." | pv -qL100
+
+### Fin del dialogo ###
+press_enter

@@ -1,0 +1,18 @@
+#!/bin/bash
+### Script de hablar con initrd.img ###
+
+### Variables ###
+FILE1="grub.old"
+FILE2="initrd.img"
+
+### Dialogo ###
+clear
+echo -e "$ ${BLUE}$PLAYER${NC}: Grub, ¿quien es el?" | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: El es initrd.img, es bastante útil por aca." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Mmmm, ya lo vere. initrd.img, hola, una pregunta, que estás haciendo?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE2${NC}: Justo ahora iba a eliminar unos archivos de la papelera, están ocupando mucho espacio y el usuario los deja ahí por mucho tiempo." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Grub, ¿que opinas de este?" | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: Bueno, su función no es eliminar archivos de la papelera y menos sin el permiso del usuario…" | pv -qL100
+
+### Fin del dialogo ###
+press_enter
