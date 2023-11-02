@@ -1,0 +1,20 @@
+#!/bin/bash
+### Script de hablar con emacs###
+
+### Diálogo ###
+clear
+echo -e "$ ${GREEN}$PLAYER${NC}: Parece que solo queda un archivo. Hey, que tal todo?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE${NC} Hola, soy emacs y tu?"| pv -qL100
+echo -e "$ ${GREEN}$PLAYER${NC}: yo soy $PLAYER , el Héroe. " pv -qL100
+echo -e "$ ${YELLOW}$FILE${NC} Hola Héroe, un placer conocerte. Todo ha estado bastante tétrico por aca, lo del hacker nos ha tenido muy preocupados a todos. " | pv -qL100
+echo -e "$ ${GREEN}$PLAYER${NC}: Me imagino, he conseguido muchos archivos corruptos por aca" | pv -qL100
+echo -e "$ ${YELLOW}$FILE${NC}:Así debe ser, he escuchado que JML, el secuaz del hacker esta por ahi" |  pv -qL100
+echo -e "$ ${GREEN}$PLAYER${NC}: Ya nos lo encontramos, fue algo...sentimental." | pv -qL100
+echo -e "$ ${YELLOW}$FILE${NC} : Rara forma de describir a JML..."| pv -qL100
+echo -e "$ ${GREEN}$PLAYER${NC}:Entonces, ¿tú qué eres?"
+echo -e "$ ${YELLOW}$FILE${NC}: Soy un editor de código :) " | pv -qL100
+echo -e "$ ${GREEN}$PLAYER${NC}: Mmmm, ya veo. Qué dices tú nicolas.cage?" | pv -qL100
+echo -e "S ${BLUE} NICOLAS CAGE ${NC} : El vikingo nicolas.cage cree que él dice la verdad, aunque no tengo información suficiente…
+ " | pv -qL100
+### Fin del dialogo ###
+press_enter
