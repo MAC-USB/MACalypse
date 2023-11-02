@@ -8,12 +8,15 @@ source $SCRIPT_DIR/src/colors.sh
 source $SCRIPT_DIR/src/config.sh
 
 ### Variables ###
-START=$SCRIPT_DIR/scripts/start.sh
+SCRIPTS_DIR=$SCRIPT_DIR/scripts
+WORLD_GEN=$SCRIPTS_DIR/world_generator.sh
+START=$SCRIPTS_DIR/start.sh
 ANIMATION=$SCRIPT_DIR/animation/animation.sh
-WORLD=$SCRIPT_DIR/scripts/world.sh
+WORLD=$SCRIPTS_DIR/world.sh
 
 ### Exec ###
 #honey_trap
+source $WORLD_GEN
 source $START
 charger_screen
 source $ANIMATION
