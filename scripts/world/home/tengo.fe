@@ -1,0 +1,7 @@
+#!/bin/bash
+
+clear
+
+cat $ASCII_DIR/mano-tengo-fe.ascii | pv -qL 5000
+
+press_enter

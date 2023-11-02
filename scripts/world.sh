@@ -3,7 +3,6 @@
 ### Variables ###
 PROMPT="${GREEN}${PLAYER}@world${NC}:${BLUE}/${NC}$ "
 WORLD_DIR=$SCRIPT_DIR/world
-ASCII_DIR=$SCRIPT_DIR/src/ascii
 WORLD_MAP=$ASCII_DIR/world_map.ascii
 
 ### Main ###
@@ -86,7 +85,7 @@ function world {
                             echo ""
                             sleep 1
                             cd $WORLD_DIR/home/
-                            source $SCRIPTS_DIR/location.sh home
+                            source $SCRIPTS_DIR/home.sh
                             return 1
                         ;;
                         *)
@@ -102,7 +101,7 @@ function world {
             ;;
             "exit")
                 echo "Saliendo del script..."
-                exit
+                return 0
             ;;
             "")
                 :

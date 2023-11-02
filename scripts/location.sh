@@ -106,15 +106,35 @@ function location {
                         VALUE='^\*$'
                         if [[ "${FILES_ARRAY[@]}" =~ $VALUE ]]
                         then
-                            echo -e "${RED}Eliminando${NC} todos los archivos"
-                            rm *
+                            if [[ $LOCATION == "bincity" ]]
+                            then
+                                source finales.sh neutral
+                            else
+                                echo -e "${RED}Eliminando${NC} todos los archivos"
+                                rm *
+                            fi
                         else
                             for FILE in "${FILES_ARRAY[@]}"
                             do
                                 if [[ -f $FILE ]]
                                 then
-                                    rm $FILE
-                                    echo "El archivo ${FILE} ha sido eliminado"
+                                    if [[ $LOCATION == "bincity" ]]
+                                    then
+                                        case $FILE in
+                                            "tesis_final_definitiva_no_borrar.docx")
+                                                source finales.sh malo
+                                            ;;
+                                            "emacs")
+                                                source finales.sh bueno
+                                            ;;
+                                            *)
+                                                :
+                                            ;;
+                                        esac
+                                    else
+                                        rm $FILE
+                                        echo "El archivo ${FILE} ha sido eliminado"
+                                    fi
                                 else
                                     echo "rm: ${FILE}: No existe el fichero o el directorio"
                                 fi

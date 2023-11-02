@@ -1,0 +1,7 @@
+#!/bin/bash
+
+clear
+
+cat $ASCII_DIR/elixir-de-la-juventud.ascii | pv -qL 5000
+
+press_enter
