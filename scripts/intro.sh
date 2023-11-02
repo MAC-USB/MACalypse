@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ## Script para la intro ##
-
 echo ""
 echo -e "Los archivos no solo sirven para almacenar información en la memoria, no.
 
@@ -27,5 +26,4 @@ echo ""
 cat $ASCII_DIR/macalypse.ascii | pv -qL 5000
 
 ## FIN DE LA INTRO ##
-
 press_enter

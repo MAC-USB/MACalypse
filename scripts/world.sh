@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ### Variables ###
-PROMPT="${GREEN}${PLAYER}@world${NC}:${BLUE}/${NC}$ "
 WORLD_DIR=$SCRIPT_DIR/world
 WORLD_MAP=$ASCII_DIR/world_map.ascii
+PROMPT="${GREEN}${PLAYER}@world${NC}:${BLUE}/${NC}$ "
 
 ### Main ###
 function main {

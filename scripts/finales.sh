@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ### Variables ###
-
 FINAL=$1
 
 ### Main ###
@@ -24,4 +23,6 @@ function main {
 }
 
 ### Exec ###
+charger_screen
 main
+charger_screen

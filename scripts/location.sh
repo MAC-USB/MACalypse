@@ -4,7 +4,6 @@
 LOCATION=$1
 LOCATION_DIR=$SCRIPTS_DIR/world/$LOCATION
 PROMPT_LOCATION="${GREEN}${PLAYER}@world${NC}:${BLUE}/$LOCATION${NC}$ "
-FINALES=$SCRIPTS_DIR/finales.sh
 
 ### Main ###
 function main {
@@ -88,6 +87,7 @@ function location {
                     return 0
                 elif [ $ARGS -eq 2 ]
                 then
+                    DIR="$(echo "${COMMAND}" | cut -d' ' -f2)"
                     echo "cd: $DIR: No existe el fichero o el directorio"
                 else
                     echo "cd: demasiados argumentos"
