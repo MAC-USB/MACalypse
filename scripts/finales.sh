@@ -6,6 +6,7 @@ FINAL=$1
 
 ### Main ###
 function main {
+    clear
     case $FINAL in
         "bueno")
             source $FINALES_DIR/final_bueno.sh
@@ -18,6 +19,7 @@ function main {
         ;;
     esac
     source $CREDITS
+    clear
     exit
 }
 

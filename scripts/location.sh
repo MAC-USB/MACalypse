@@ -4,6 +4,7 @@
 LOCATION=$1
 LOCATION_DIR=$SCRIPTS_DIR/world/$LOCATION
 PROMPT_LOCATION="${GREEN}${PLAYER}@world${NC}:${BLUE}/$LOCATION${NC}$ "
+FINALES=$SCRIPTS_DIR/finales.sh
 
 ### Main ###
 function main {
@@ -108,7 +109,7 @@ function location {
                         then
                             if [[ $LOCATION == "bincity" ]]
                             then
-                                source finales.sh neutral
+                                source $FINALES neutral
                             else
                                 echo -e "${RED}Eliminando${NC} todos los archivos"
                                 rm *
@@ -122,10 +123,10 @@ function location {
                                     then
                                         case $FILE in
                                             "tesis_final_definitiva_no_borrar.docx")
-                                                source finales.sh malo
+                                                source $FINALES malo
                                             ;;
                                             "emacs")
-                                                source finales.sh bueno
+                                                source $FINALES bueno
                                             ;;
                                             *)
                                                 :
