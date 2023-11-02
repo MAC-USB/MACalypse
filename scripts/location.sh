@@ -6,20 +6,26 @@ PROMPT_LOCATION="${GREEN}${PLAYER}@world${NC}:${BLUE}/$LOCATION${NC}$ "
 
 ### Main ###
 function main {
-    clear
-    instructions_location
-    location
+    while true
+    do
+        clear
+        instructions_location
+        if location
+        then
+            break
+        fi
+    done
 }
 
 ### Funciones ###
 function instructions_location {
     echo ""
     echo -e "${bold}Comandos disponibles:${NC}" | pv -qL100
-    echo -e "${YELLOW}ls${NC}: para listar los archivos con los que puedes hablar." | pv -qL100
-    echo -e "${YELLOW}cd${NC}: sin argumentos para regresar al mapa mundi." | pv -qL100
-    echo -e "${YELLOW}cat [ARCHIVO]${NC}: para hablar con dicho archivo." | pv -qL100
-    echo -e "${YELLOW}rm [ARCHIVO(s)]${NC}: para ${RED}eliminar${NC} uno o varios archivos." | pv -qL100
-    echo -e "${YELLOW}help${NC}: para mostrar las instrucciones de nuevo." | pv -qL100
+    echo -e "${YELLOW}ls${NC}: para listar los archivos con los que puedes hablar."
+    echo -e "${YELLOW}cd${NC}: sin argumentos para regresar al mapa mundi."
+    echo -e "${YELLOW}cat [ARCHIVO]${NC}: para hablar con dicho archivo."
+    echo -e "${YELLOW}rm [ARCHIVO(s)]${NC}: para ${RED}eliminar${NC} uno o varios archivos."
+    echo -e "${YELLOW}help${NC}: para mostrar las instrucciones de nuevo."
     echo ""
 }
 
@@ -54,6 +60,7 @@ function location {
                     if [[ -f $FILE ]]
                     then
                         source $SCRIPTS_DIR/world/$LOCATION/$FILE
+                        return 1
                     else
                         echo "cat: $FILE: No existe el fichero o el directorio"
                     fi
@@ -69,7 +76,7 @@ function location {
                     echo "Regresando al mapa mundi..." | pv -qL100
                     echo ""
                     sleep 1
-                    break
+                    return 0
                 elif [ $ARGS -eq 2 ]
                 then
                     echo "cd: $DIR: No existe el fichero o el directorio"
@@ -86,16 +93,23 @@ function location {
                 then
                     FILES="$(echo "${COMMAND}" | cut -d' ' -f2-)"
                     IFS=" " read -r -a FILES_ARRAY <<< "${FILES}"
-                    for FILE in "${FILES_ARRAY[@]}"
-                    do
-                        if [[ -f $FILE ]]
-                        then
-                            rm $FILE
-                            echo "El archivo ${FILE} ha sido eliminado"
-                        else
-                            echo "rm: ${FILE}: No existe el fichero o el directorio"
-                        fi
-                    done
+                    VALUE='^\*$'
+                    if [[ "${FILES_ARRAY[@]}" =~ $VALUE ]]
+                    then
+                        echo -e "${RED}Eliminando${NC} todos los archivos"
+                        rm *
+                    else
+                        for FILE in "${FILES_ARRAY[@]}"
+                        do
+                            if [[ -f $FILE ]]
+                            then
+                                rm $FILE
+                                echo "El archivo ${FILE} ha sido eliminado"
+                            else
+                                echo "rm: ${FILE}: No existe el fichero o el directorio"
+                            fi
+                        done
+                    fi
                 fi
             ;;
             "help")

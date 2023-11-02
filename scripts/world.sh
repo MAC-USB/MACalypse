@@ -24,9 +24,9 @@ function main {
 function instructions {
     echo ""
     echo -e "${bold}Comandos disponibles:${NC}" | pv -qL100
-    echo -e "${YELLOW}ls${NC}: para listar los asentamientos que puedes visitar." | pv -qL100
-    echo -e "${YELLOW}cd [ASENTAMIENTO]${NC}: para entrar en dicho asentamiento." | pv -qL100
-    echo -e "${YELLOW}help${NC}: para mostrar las instrucciones de nuevo." | pv -qL100
+    echo -e "${YELLOW}ls${NC}: para listar los asentamientos que puedes visitar."
+    echo -e "${YELLOW}cd [ASENTAMIENTO]${NC}: para entrar en dicho asentamiento."
+    echo -e "${YELLOW}help${NC}: para mostrar las instrucciones de nuevo."
     echo ""
 }
 

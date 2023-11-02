@@ -80,10 +80,7 @@ function confirm_name {
     do
         read -e -p "$ " INPUT
         case $INPUT in
-            "")
-                :
-            ;;
-            [yY]|[yY][eE][sS])
+            ""|[yY]|[yY][eE][sS])
                 echo ""
                 echo "¿En serio? No es el mejor nombre... Pero ya que." | pv -qL30
                 press_enter
