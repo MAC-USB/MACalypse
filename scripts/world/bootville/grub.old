@@ -1,0 +1,23 @@
+#!/bin/bash
+### Script de hablar con grub.old ###
+
+### Diálogo ###
+clear
+echo -e "$ ${GREEN}$PLAYER${NC}: Buenos dias, Sr..." | pv -qL100
+echo -e "$ ${YELLOW}$FILE${NC}: Sr grub.old, pero mis amigos me llaman grub." | pv -qL100
+echo -e "$ ${GREEN}$PLAYER${NC}: Bueno, grub.old, ¿que ha pasado aca?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE${NC}: Esto se ha salido de control, he intentado calmarlos y trabajar juntos pero no quieren,
+solo desean que los archivos corruptos desaparezcan." | pv -qL100
+echo -e "$ ${GREEN}$PLAYER${NC}: ¿Y tu no quieres eso?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE${NC}: Claro que no, pero amenazandonos entre nosotros no lo vamos a lograr, mientras peleamos
+ellos toman la ventaja, ¡nos van a destruir por su culpa!" | pv -qL100
+echo -e "$ ${GREEN}$PLAYER${NC}: Tranquilo, yo intentaré ayudar con eso, solo debo hablar con algunos archivos para saber
+si son corruptos o no." | pv -qL100
+echo -e "$ ${YELLOW}$FILE${NC}: Mucha suerte Heroe, espero nos ayudes." | pv -qL100
+echo -e "$ ${GREEN}$PLAYER${NC}: Pero necesito a alguien que me ayude, no conozco a casi ninguno de estos archivos o a
+los archivos en general, ¿me ayudarias?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE${NC}: Todo sea por salvar a mi aldea." | pv -qL100
+echo -e "$ ${GREEN}$PLAYER${NC}: Vamos entonces." | pv -qL100
+
+### Fin del dialogo ###
+press_enter
