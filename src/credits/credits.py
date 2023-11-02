@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import curses
 import time
+import sys
 import os
 
 #Se inicializa la pantalla
@@ -17,7 +18,7 @@ maxx, maxy = pantalla.getmaxyx()
 curses.curs_set(0)
 
 #Se obtienen los creditos
-credFile = open('/src/credits/credits.txt')
+credFile = open(sys.argv[1], "r")
 lineas = credFile.readlines()
 lineas.reverse()
 credFile.close()

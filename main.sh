@@ -13,6 +13,7 @@ WORLD_GEN=$SCRIPTS_DIR/world_generator.sh
 START=$SCRIPTS_DIR/start.sh
 ANIMATION=$SCRIPT_DIR/animation/animation.sh
 WORLD=$SCRIPTS_DIR/world.sh
+CREDIT_DIR=$SCRIPT_DIR/src/credits
 
 ### Exec ###
 #honey_trap

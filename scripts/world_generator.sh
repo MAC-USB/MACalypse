@@ -14,6 +14,7 @@ mkdir {bootville,etceteria,bincity,home}
 touch bootville/{grubcito.cfg,linuz100realnofake.txt,initrd.img,grub.old,blacklist.txt}
 touch etceteria/{sysctl.conf,magic.mike,etceterio.txt,passwd,profilactico.cpp,profile,blutu.conf,system32}
 touch bincity/{nicolas.cage,tesis_final_definitiva_no_borrar.docx,cat,ls,jajajajja,emacs,binario.bio,JML}
+touch home/{channing.tatum,elixir-de-la-vida,tengo.fe}
 
 # Se regresa al directorio anterior
 cd -
