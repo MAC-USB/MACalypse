@@ -76,7 +76,7 @@ function world {
                             echo -e "Entrando a ${BLUE}etceteria${NC}..." | pv -qL100
                             echo ""
                             sleep 1
-                            cd $WORLD_DIR/etcteria/
+                            cd $WORLD_DIR/etceteria/
                             source $SCRIPTS_DIR/location.sh etceteria
                             return 1
                         ;;

@@ -10,6 +10,7 @@ source $SCRIPT_DIR/src/config.sh
 ### Variables ###
 SCRIPTS_DIR=$SCRIPT_DIR/scripts
 WORLD_GEN=$SCRIPTS_DIR/world_generator.sh
+TEMP=$SCRIPT_DIR/tmp
 START=$SCRIPTS_DIR/start.sh
 ANIMATION=$SCRIPT_DIR/animation/animation.sh
 WORLD=$SCRIPTS_DIR/world.sh
