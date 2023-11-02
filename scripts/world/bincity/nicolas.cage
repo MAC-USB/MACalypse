@@ -1,0 +1,21 @@
+#!/bin/bash
+### Script de hablar con nicolas.cage ###
+
+### Variables ###
+FILE1="grub.old"
+FILE2="nicolas.cage"
+
+### Dialogo ###
+clear
+echo -e "$ ${GREEN}$FILE1${NC}: Bueno ya llegamos, aqui se supone que debería estar la solucion a todo, podremos acabar con todo esto." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Espera, ¿quién es él?" | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: No se, pero no creo que sea algun archivo importante, vamonos." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Quiero hablar con él…. Hey, amigo, ¿cómo estás?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE2${NC}: Hola, soy el poderosísimo archivo nicolas.cage, contengo toda la información de tiempo real de la computadora, he vivido por muchos años observando y al fin llegó el momento de intervenir y ayudar a los archivos…" | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Solo te pregunté que cómo estabas jajaja. Pero ni modo, nicolas.cage, necesito que me ayudes a saber que paso con los archivos, ¿por que se corrompieron?" | pv -qL100
+echo -e "$ ${YELLOW}$FILE2${NC}: He aquí tu herramienta, el todopoderoso nicolas.cage, iré contigo. Además, te contaré, todo esto es por culpa de ${RED}un hacker ruso${NC}, que nos esta atacando." | pv -qL100
+echo -e "$ ${BLUE}$PLAYER${NC}: Muchas gracias nicolas.cage, tu respuesta es todopoderosisima y que vengas vale oro." | pv -qL100
+echo -e "$ ${GREEN}$FILE1${NC}: Perfecto, ahora si podremos acabar con el hacker." | pv -qL100
+
+### Fin del dialogo ###
+press_enter
