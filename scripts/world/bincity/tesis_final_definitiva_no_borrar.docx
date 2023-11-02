@@ -15,7 +15,7 @@ echo -e "$ ${GREEN}$FILE1${NC}: No, pero he escuchado cosas de ella y no son muy
 echo -e "$ ${BLUE}$PLAYER${NC}: ¿Cómo que cosas?" | pv -qL100
 echo -e "$ ${GREEN}$FILE1${NC}: Como que siempre anda cambiando de nombre y modificándose" | pv -qL100
 echo -e "$ ${BLUE}$PLAYER${NC}: ¿Que opinas tu nicolas.cage?" | pv -qL100
-echo -e "$ ${YELLOW}$FILE2${NC}: El maravilloso nicolas.cage opina que es cierto lo que dice grub.old, no parece confiable. Es mejor seguir avanzando." | pv -qL100
+echo -e "$ ${GREEN}$FILE2${NC}: El maravilloso nicolas.cage opina que es cierto lo que dice grub.old, no parece confiable. Es mejor seguir avanzando." | pv -qL100
 
 ### Fin del dialogo ###
 press_enter
