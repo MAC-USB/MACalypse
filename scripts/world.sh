@@ -88,6 +88,9 @@ function world {
                             source $SCRIPTS_DIR/home.sh
                             return 1
                         ;;
+                        "."|"..")
+                            :
+                        ;;
                         *)
                             echo "cd: $DIR: No existe el fichero o el directorio"
                         ;;

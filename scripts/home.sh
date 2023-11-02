@@ -68,14 +68,28 @@ function home {
                 ARGS=$(wc -w <<< "$COMMAND")
                 if [ $ARGS -eq 1 ]
                 then
-                    echo ""
-                    echo "Regresando al mapa mundi..." | pv -qL100
-                    echo ""
-                    sleep 1
+                    back_directory
                     return 0
                 elif [ $ARGS -eq 2 ]
                 then
-                    echo "cd: $DIR: No existe el fichero o el directorio"
+                    DIR="$(echo "${COMMAND}" | cut -d' ' -f2)"
+                    if [[ -f $DIR ]]
+                    then
+                        echo "cd: $DIR: No es un directorio"
+                    else
+                        case $DIR in
+                            "..")
+                                back_directory
+                                return 0
+                            ;;
+                            ".")
+                                :
+                            ;;
+                            *)
+                                echo "cd: $DIR: No existe el fichero o el directorio"
+                            ;;
+                        esac
+                    fi
                 else
                     echo "cd: demasiados argumentos"
                 fi

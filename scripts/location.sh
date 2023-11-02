@@ -62,11 +62,11 @@ function location {
                     if [[ -f $FILE ]]
                     then
                         source $LOCATION_DIR/$FILE
-                        if grep -Fxq "${FILE}" $TEMP/$LOCATION
+                        if grep -Fxq "${FILE}" $TEMP/$LOCATION.tmp
                             then
                                 :
                             else
-                                echo $FILE >> $TEMP/$LOCATION
+                                echo $FILE >> $TEMP/$LOCATION.tmp
                         fi
                         return 1
                     else
@@ -80,21 +80,34 @@ function location {
                 ARGS=$(wc -w <<< "$COMMAND")
                 if [ $ARGS -eq 1 ]
                 then
-                    echo ""
-                    echo "Regresando al mapa mundi..." | pv -qL100
-                    echo ""
-                    sleep 1
+                    back_directory
                     return 0
                 elif [ $ARGS -eq 2 ]
                 then
                     DIR="$(echo "${COMMAND}" | cut -d' ' -f2)"
-                    echo "cd: $DIR: No existe el fichero o el directorio"
+                    if [[ -f $DIR ]]
+                    then
+                        echo "cd: $DIR: No es un directorio"
+                    else
+                        case $DIR in
+                            "..")
+                                back_directory
+                                return 0
+                            ;;
+                            ".")
+                                :
+                            ;;
+                            *)
+                                echo "cd: $DIR: No existe el fichero o el directorio"
+                            ;;
+                        esac
+                    fi
                 else
                     echo "cd: demasiados argumentos"
                 fi
             ;;
             "rm"*)
-                if [[ $(ls $LOCATION_DIR | sort) = $(sort $TEMP/$LOCATION 2> /dev/null) ]]
+                if [[ $(ls $LOCATION_DIR | sort) = $(sort $TEMP/$LOCATION.tmp 2> /dev/null) ]]
                 then
                     ARGS=$(wc -w <<< "$COMMAND")
                     if [ $ARGS -eq 1 ]
@@ -157,6 +170,13 @@ function location {
             ;;
         esac
     done
+}
+
+function back_directory {
+    echo ""
+    echo "Regresando al mapa mundi..." | pv -qL100
+    echo ""
+    sleep 1
 }
 
 ### Exec ###
