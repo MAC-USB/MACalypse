@@ -1,0 +1,19 @@
+#!/bin/bash
+### Script de habblar con linuz100realnofake.txt y grubcito.cfg###
+
+### Variables ###
+FILE1="grub.old"
+FILE2="linuz100realnofake.txt"
+FILE3="grubcito.cfg"
+
+### Dialogo ###
+echo -e "${YELLOW}${FILE2}:${NC} ¡${PLAYER}!, ¿como estas?." | pv -qL50
+echo -e "${BLUE}$PLAYER:${NC} ${FILE2}, cuanto tiempo bella, aqui estoy, intentando ayudar, ¿y tu?" | pv -qL50
+echo -e "${YELLOW}$FILE2:${NC} Aquí con una amiga, te la presento se llama grubcito.cfg, es tímida y no habla mucho con personas que conoce recientemente, aunque en realidad, ni siquiera habla conmigo… pero es pana." | pv -qL50
+echo -e "${BLUE}$PLAYER:${NC} Mmm ya veo, grubcito.cfg, un placer, cuentame, ¿que haces?" | pv -qL50
+echo -e "${PURPLE}$FILE3:${NC} ......" | pv -qL50
+echo -e "${BLUE}$PLAYER:${NC} Grub, ¿que opinas?" | pv -qL50
+echo -e "${GREEN}$FILE1:${NC} Su nombre no me convence y eso de que es muy callada esta raro." | pv -qL50
+
+### Fin del dialogo ###
+press_enter

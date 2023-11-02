@@ -1,0 +1,16 @@
+#!/bin/bash
+### Script de habblar con blacklist.txt ###
+
+### Variables ###
+FILE1="grub.old"
+FILE2="blacklist.txt"
+
+### Dialogo ###
+echo -e "${GREEN}$FILE1:${NC} Ok, esta definitivamente es mala, nadie sabe nada de ella. Es muy rara." | pv -qL50
+echo -e "${BLUE}$PLAYER:${NC} A ver. Hola, ¿cómo estás?" | pv -qL50
+echo -e "${YELLOW}$FILE2:${NC} Ay chica estoy estresada, mira todos esos archivos que intentan hacer acciones indebidas, dígame ese virus666.exe, mami ya, deja de intentarlo, que triste que te la pasas cambiando de nombre. Estoy agotada, tres horas seguidas trabajando y siguen llegando mas, no como mi hermano, miralo, sentado en esa silla de lo mas divino, como te odio whitelist.txt." | pv -qL50
+echo -e "${BLUE}$PLAYER:${NC} Grub, lo que dice tiene sentido, por que dices que es malo?" | pv -qL50
+echo -e "${GREEN}$FILE1:${NC} La verdad me cambió un poco mi forma de pensar sobre ella." | pv -qL50
+
+### Fin del dialogo ###
+press_enter
